@@ -11,6 +11,7 @@
 		DF5EAD872BB8A72B0083F8D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD862BB8A72B0083F8D3 /* ContentView.swift */; };
 		DF5EAD892BB8A72C0083F8D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5EAD882BB8A72C0083F8D3 /* Assets.xcassets */; };
 		DF5EAD8C2BB8A72C0083F8D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5EAD8B2BB8A72C0083F8D3 /* Preview Assets.xcassets */; };
+		DF5EAD942BB8A7680083F8D3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD932BB8A7680083F8D3 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DF5EAD862BB8A72B0083F8D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF5EAD882BB8A72C0083F8D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5EAD8B2BB8A72C0083F8D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF5EAD932BB8A7680083F8D3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		DF5EAD832BB8A72B0083F8D3 /* RememberThem */ = {
 			isa = PBXGroup;
 			children = (
+				DF5EAD922BB8A74F0083F8D3 /* Models */,
 				DF5EAD842BB8A72B0083F8D3 /* RememberThemApp.swift */,
 				DF5EAD862BB8A72B0083F8D3 /* ContentView.swift */,
 				DF5EAD882BB8A72C0083F8D3 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				DF5EAD8B2BB8A72C0083F8D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF5EAD922BB8A74F0083F8D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF5EAD932BB8A7680083F8D3 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5EAD942BB8A7680083F8D3 /* Contact.swift in Sources */,
 				DF5EAD872BB8A72B0083F8D3 /* ContentView.swift in Sources */,
 				DF5EAD852BB8A72B0083F8D3 /* RememberThemApp.swift in Sources */,
 			);
