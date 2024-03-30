@@ -17,6 +17,15 @@ struct Contact: Identifiable, Codable, Comparable {
     var latitude: Double = 0
     var longitude: Double = 0
     
+    var image: Image {
+        if let data = ImageUtilities().getImage(imagePath: imagePath) {
+            if let uiImage = UIImage(data: data) {
+                return Image(uiImage: uiImage)
+            }
+        }
+        return Image("")
+    }
+    
     var coordinate: CLLocationCoordinate2D? {
         guard locationRecord else { return nil }
         
@@ -35,7 +44,7 @@ struct Contact: Identifiable, Codable, Comparable {
 
 
 /*
-    CoreLocation (framewoek)
+    CoreLocation (framework)
  
         → Core Location provides services that determine a device’s geographic location, altitude, and orientation.
         → The framework gathers data using all available components on the device, including the Wi-Fi, GPS, Bluetooth, magnetometer, barometer, and cellular hardware.
