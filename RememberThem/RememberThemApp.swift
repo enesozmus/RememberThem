@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RememberThemApp: App {
+    private var viewModel: ContactsViewModel = FileContacts();
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
         }
     }
 }

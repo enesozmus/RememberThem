@@ -14,6 +14,8 @@
 		DF5EAD942BB8A7680083F8D3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD932BB8A7680083F8D3 /* Contact.swift */; };
 		DF5EAD972BB8AC7F0083F8D3 /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD962BB8AC7F0083F8D3 /* ImageUtilities.swift */; };
 		DF5EAD9A2BB8B8890083F8D3 /* FileManager-DocDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD992BB8B8890083F8D3 /* FileManager-DocDirectory.swift */; };
+		DF5EAD9C2BB8C1240083F8D3 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD9B2BB8C1240083F8D3 /* ContactsViewModel.swift */; };
+		DF5EAD9E2BB8C1930083F8D3 /* FileContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAD9D2BB8C1930083F8D3 /* FileContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		DF5EAD932BB8A7680083F8D3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		DF5EAD962BB8AC7F0083F8D3 /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
 		DF5EAD992BB8B8890083F8D3 /* FileManager-DocDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocDirectory.swift"; sourceTree = "<group>"; };
+		DF5EAD9B2BB8C1240083F8D3 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		DF5EAD9D2BB8C1930083F8D3 /* FileContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				DF5EAD922BB8A74F0083F8D3 /* Models */,
 				DF5EAD842BB8A72B0083F8D3 /* RememberThemApp.swift */,
 				DF5EAD862BB8A72B0083F8D3 /* ContentView.swift */,
+				DF5EAD9B2BB8C1240083F8D3 /* ContactsViewModel.swift */,
+				DF5EAD9D2BB8C1930083F8D3 /* FileContacts.swift */,
 				DF5EAD882BB8A72C0083F8D3 /* Assets.xcassets */,
 				DF5EAD8A2BB8A72C0083F8D3 /* Preview Content */,
 			);
@@ -171,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5EAD9A2BB8B8890083F8D3 /* FileManager-DocDirectory.swift in Sources */,
+				DF5EAD9E2BB8C1930083F8D3 /* FileContacts.swift in Sources */,
+				DF5EAD9C2BB8C1240083F8D3 /* ContactsViewModel.swift in Sources */,
 				DF5EAD942BB8A7680083F8D3 /* Contact.swift in Sources */,
 				DF5EAD872BB8A72B0083F8D3 /* ContentView.swift in Sources */,
 				DF5EAD852BB8A72B0083F8D3 /* RememberThemApp.swift in Sources */,

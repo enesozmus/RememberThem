@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel: ContactsViewModel
+    
+    /*
+        init(wrappedValue:)
+            → Creates a new state object with an initial wrapped value.
+            → The underlying value referenced by the state object.
+     */
+    init(viewModel: ContactsViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +32,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: FileContacts())
 }
