@@ -21,13 +21,41 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(viewModel.contacts) { contact in
+                    NavigationLink {
+                        // ...
+                    } label: {
+                        HStack {
+                            contact.image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(30)
+                            Text(contact.name)
+                                .font(.headline)
+                        }
+                    }
+                    .padding(.trailing)
+                    .background(.teal.opacity(0.5))
+                    .cornerRadius(30)
+                    .listRowSeparator(.hidden)
+                }
+                .onDelete(perform: viewModel.remove)
+            }
+            .listStyle(.plain)
+            .navigationTitle("Friendly Contacts")
+            .toolbar {
+                Button {
+                    viewModel.showingAddContact = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+                .foregroundColor(.primary)
+            }
+            // ...
         }
-        .padding()
     }
 }
 
