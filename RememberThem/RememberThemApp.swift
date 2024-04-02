@@ -13,7 +13,7 @@ struct RememberThemApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: viewModel)
+            ContentView(vm: viewModel)
         }
     }
 }

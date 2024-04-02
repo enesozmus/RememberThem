@@ -9,21 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel: ContactsViewModel
+    @StateObject var vm: ContactsViewModel
     
     /*
         init(wrappedValue:)
             → Creates a new state object with an initial wrapped value.
             → The underlying value referenced by the state object.
      */
-    init(viewModel: ContactsViewModel) {
-        _viewModel = StateObject(wrappedValue: viewModel)
+    init(vm: ContactsViewModel) {
+        _vm = StateObject(wrappedValue: vm)
     }
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.contacts) { contact in
+                ForEach(vm.contacts) { contact in
                     NavigationLink {
                         // ...
                     } label: {
@@ -42,23 +42,27 @@ struct ContentView: View {
                     .cornerRadius(30)
                     .listRowSeparator(.hidden)
                 }
-                .onDelete(perform: viewModel.remove)
+                .onDelete(perform: vm.remove)
             }
             .listStyle(.plain)
             .navigationTitle("Friendly Contacts")
             .toolbar {
                 Button {
-                    viewModel.showingAddContact = true
+                    vm.showingAddContact = true
                 } label: {
                     Image(systemName: "plus")
                 }
                 .foregroundColor(.primary)
             }
             // ...
+            .sheet(isPresented: $vm.showingAddContact) {
+                AddContactView(contactsVM: vm)
+                    .environmentObject(vm)
+            }
         }
     }
 }
 
 #Preview {
-    ContentView(viewModel: FileContacts())
+    ContentView(vm: FileContacts())
 }
