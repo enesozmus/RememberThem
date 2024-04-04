@@ -6,6 +6,7 @@
 //
 
 import CoreLocation
+import Foundation
 
 class LocationFetcher: NSObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()

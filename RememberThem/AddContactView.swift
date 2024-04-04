@@ -103,6 +103,6 @@ struct AddContactView: View {
     }
 }
 
-//#Preview {
-//    AddContactView(contactsVM: ContactsViewModel())
-//}
+#Preview {
+    AddContactView(contactsVM: ContactsViewModel())
+}

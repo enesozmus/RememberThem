@@ -20,6 +20,7 @@
 		DFBA30822BBC35650003DC49 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA30812BBC35650003DC49 /* AddContactView.swift */; };
 		DFBA30842BBC35E10003DC49 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA30832BBC35E10003DC49 /* ImagePicker.swift */; };
 		DFBA30862BBC37EA0003DC49 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA30852BBC37EA0003DC49 /* LocationFetcher.swift */; };
+		DFBA30882BBC420D0003DC49 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA30872BBC420D0003DC49 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DFBA30812BBC35650003DC49 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		DFBA30832BBC35E10003DC49 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DFBA30852BBC37EA0003DC49 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		DFBA30872BBC420D0003DC49 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DFBA307F2BBC34CE0003DC49 /* AddContactViewModel.swift */,
 				DFBA30832BBC35E10003DC49 /* ImagePicker.swift */,
 				DFBA30852BBC37EA0003DC49 /* LocationFetcher.swift */,
+				DFBA30872BBC420D0003DC49 /* DetailView.swift */,
 				DF5EAD882BB8A72C0083F8D3 /* Assets.xcassets */,
 				DF5EAD8A2BB8A72C0083F8D3 /* Preview Content */,
 			);
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5EAD9A2BB8B8890083F8D3 /* FileManager-DocDirectory.swift in Sources */,
+				DFBA30882BBC420D0003DC49 /* DetailView.swift in Sources */,
 				DF5EAD9E2BB8C1930083F8D3 /* FileContacts.swift in Sources */,
 				DF5EAD9C2BB8C1240083F8D3 /* ContactsViewModel.swift in Sources */,
 				DF5EAD942BB8A7680083F8D3 /* Contact.swift in Sources */,
@@ -334,6 +338,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RememberThem/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -362,6 +367,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RememberThem/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

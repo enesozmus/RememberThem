@@ -26,6 +26,7 @@ struct ContentView: View {
                 ForEach(vm.contacts) { contact in
                     NavigationLink {
                         // ...
+                        DetailView(contact: contact)
                     } label: {
                         HStack {
                             contact.image
